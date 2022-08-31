@@ -1,0 +1,465 @@
+/* reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.8rem;
+}
+a {
+    text-decoration: none;
+}
+
+/* ultility */
+.container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+li {
+    list-style: none;
+}
+
+.text-center {
+    text-align: center;
+    font-size: 3rem;
+    line-height: 4rem;
+    margin-bottom: 3rem;
+    padding: 3rem;
+    background-image: linear-gradient(to right, #c20f9b, #0b35b3);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 2px;
+    transition: .4s;
+}
+
+.text-center:hover {
+    transform: skewX(3deg) skewY(4deg);
+    text-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.frist-btn {
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    transition: .4s;
+    background: rgb(103, 103, 247);
+    color: #fff;
+}
+
+.frist-btn:hover {
+    background: #00f;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.back-to-top {
+    border: 1px solid  cornflowerblue;
+    padding: 17px 32px;
+    border-radius: 30px;
+    color: #000;
+    transition: .7s;
+}
+
+.back-to-top:hover {
+   background: cornflowerblue;
+}
+
+/* landing */
+#landing {
+    background: url(../img/ashik.gif)no-repeat center center/cover
+    ;
+    height: 100vh;
+    clip-path: polygon(0 0, 100% 0, 100% 92vh, 0 100%);
+}
+
+#landing .navbar {
+    padding: 2rem 0;
+}
+
+#landing .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;   
+    padding: 0 10px;
+}
+
+#landing .navbar ul li {
+    margin-left: 6rem;
+}
+
+#landing .navbar ul li:first-child{
+    margin-left: 0;
+}
+
+#landing .navbar ul li a {
+    font-size: 1.5rem;
+    color: #ffffff;
+    transition: 1s;
+}
+
+#landing .navbar ul li a:hover {
+    color: #444;
+}
+
+#landing .text-box {
+    position: absolute;
+    top: 40%;
+    bottom: 40%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+
+#landing .text-box h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    text-shadow: 5px 7px #444;
+}
+#landing .text-box p {
+    font-size: 1.4rem;
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+
+/* section about */
+#about {
+    background: #ffffff;
+    margin-bottom: 4rem;
+}
+
+#about .about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 6rem;
+
+}
+#about .about-items {
+    margin-top: 3rem;
+    text-align: center;   
+}
+
+#about .about-grid h3 {
+    color: #555555;
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+    line-height: 3rem;
+}
+
+#about .about-grid p {
+    margin-bottom: 4rem;
+}
+
+#about .info-img {
+   width: 350px;
+   margin: auto;
+   animation: example 8s linear infinite;
+}
+
+@keyframes example {
+   0%{
+       transform: rotate(0);
+    } 
+   100%{
+       transform: rotate(360deg);
+    }
+}
+
+
+/* technologies section-2 */
+#technogies {
+    background: url(../img/original.gif) no-repeat center center/cover;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+    padding: 9rem 0;
+
+ 
+}
+
+#technogies .grid-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 7rem;
+    margin-bottom: 6rem;
+}
+
+#technogies .feature-box {
+    background: #f4f4f4;
+    padding: 3rem 1rem;
+    text-align: center;
+    transition: .4s;
+}
+
+#technogies  .feature-box:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+}
+
+#technogies .grid-items h3 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+#technogies .grid-items li {
+    margin-bottom: 1rem;
+}
+
+
+
+#technogies i {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    background-image: linear-gradient(to right, #c20f9b, #0b35b3);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: .3s;
+}
+
+#technogies i:hover {
+    transform: scale(1.4);
+}
+
+
+/* project */
+#project .items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+   
+}
+
+#project .items .item {
+    border: 1px solid #444; 
+    position: relative;
+    background: #444;
+    border-radius: 12px;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+}
+
+#project .items h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #ccc;
+}
+
+#project .items .btn-link {
+    background: #0b35b3;
+    border-radius: 20px;
+    padding: 8px 10px;
+    margin-left: 10px;
+    transition: 2s;
+    color: #fff;
+}
+
+#project .items .btn-link:hover {
+    background: #5370ca;
+}
+
+#project .item::after {
+    content: '';
+    position: absolute;
+    display: block;
+    background: inherit;
+    opacity: 0.9;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(2) translateX(-75%) translateY(-75%) rotate(-28deg);
+    transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+#project .item:hover:after {
+    transform: scale(2) translateX(0) translateY(0) rotate(-28deg);
+}
+
+#project .item:hover .item-image {
+    transform: scale(1.2); 
+}
+
+#project .item:hover .item-text {
+    opacity: 1;
+    transform: translateY(0); 
+}
+
+#project .item-image {
+    height: auto;
+    transform: translateZ(0);
+    display: block;
+    transition: transform 750ms cubic-bezier(0.2, 1, 0.3, 1); 
+}
+
+#project .item-image:before {
+    content: '';
+    display: block;
+    padding-top: 75%;
+    overflow: hidden; 
+}
+
+#project .item-image img {
+    width: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 500px;
+    line-height: 0; 
+}
+
+#project .item-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+    transform: translateY(-20%);
+    transition: opacity 500ms cubic-bezier(0.2, 1, 0.3, 1), transform 500ms cubic-bezier(0.2, 1, 0.3, 1);
+    transition-delay: 300ms; 
+}
+
+#project .item-text-wrap {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+#project .item-text-title {
+    font-size: 2rem;
+    padding: 0 1rem;
+    margin: 5px 0 0 0; 
+}
+#project .item-text-category {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    opacity: 0.7;
+    margin: 0; 
+}
+
+
+/* contact me */
+#contact .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+    margin-bottom: 4rem;
+}
+#contact .contact-grid .info-img {
+    margin: 0 3rem;
+}
+
+#contact .img-info {
+clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+}
+
+#contact .contact-grid .from {
+    margin-top: 4rem;
+}
+
+#contact .contact-grid h2 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: #555;
+}
+
+#contact .contact-grid p {
+    color: #777;
+    margin-bottom: 5px;
+}
+
+#contact .contact-grid input {
+    width: 100%;
+    height: 45px;
+    margin-bottom: 6px;
+    border-radius: 5px;
+    padding: 10px 10px;
+    border: 1px solid #444444;
+}
+
+
+#contact .contact-grid textarea {
+    width: 100%;
+    height: 120px;
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin-bottom: 1rem;
+}
+
+button{
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    background: #666;
+    color: #fff;
+    border: none;
+    transition: 2s;
+}
+
+button:hover {
+    background: #00f;
+}
+
+
+/* footer */
+#main-footer {
+    background: #ECEFF1;
+    padding: 3rem 0;
+}
+
+#main-footer .links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+#main-footer .links a{
+    font-size: 1.5rem;
+    margin-left: 4rem;
+    color: #444;
+}
+
+#main-footer .links a:hover {
+    color: #00f;
+}
+
+#main-footer .links a:first-child {
+    margin-left: 0;
+}
+
+#main-footer .foot {
+    display: flex;
+    justify-content: center;
+    grid-gap: 5rem;
+    margin-bottom: 2rem;
+}
+
+.last-button{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
