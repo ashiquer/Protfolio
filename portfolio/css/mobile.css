@@ -1,0 +1,88 @@
+/****tablet responsive*****/
+.text-center {
+    font-size: 2.1rem;
+}
+
+/* landing */
+#landing .navbar ul li {
+    margin-left: 2rem;
+  
+}
+
+#landing .navbar ul li a {
+    font-size: 1.2rem;
+}
+
+#landing .text-box h1 {
+    font-size: 2rem;
+}
+
+/* about */
+#about .about-grid {
+    grid-template-columns: 1fr;
+}
+
+#about .info-img {
+    width: 250px;
+}
+
+/* technogies */
+#technogies .grid-items {
+    grid-template-columns:  repeat(2, 1fr);
+}
+
+/* project */
+#project .items {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* contact */
+#contact .contact-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+/* footer */
+#main-footer .links a{
+    font-size: 1.2rem;
+    margin-left: 1.2rem;
+}
+
+/****mobile responsive*****/
+@media(max-width: 500px) {
+    .text-center {
+        font-size: 1.8rem;
+    }
+
+    /* navbar */
+    #landing .navbar ul li {
+        margin-left: 10px;
+      
+    }
+    
+    #landing .navbar ul li a {
+        font-size: 1rem;
+    }
+
+    /* technogies */
+    #technogies .grid-items {
+        grid-template-columns:  1fr;
+    }
+    
+    /* project */
+    #project .items {
+        grid-template-columns: 1fr;
+    }
+
+    /* footer */
+    #main-footer .links a{
+        font-size: 1rem;
+        margin-left: 1rem;
+    }
+    
+    #main-footer .foot {
+        flex-direction: column;
+        grid-gap: 1rem;
+        text-align: center;
+    } 
+}
